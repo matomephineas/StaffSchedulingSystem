@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:elevation="20dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+ <LinearLayout
+     android:id="@+id/stafflayout"
+     android:background="@drawable/editbackground"
+     android:paddingLeft="5dp"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+     <LinearLayout
+         android:padding="5dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Subject name        :"
+                 android:textSize="15sp"
+                 android:textColor="@color/black"/>
+             <TextView
+                 android:layout_marginLeft="10dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="software engineering"
+                 android:id="@+id/subject_name"
+                 android:textSize="15sp"
+                 android:textColor="@color/black"
+                 />
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_marginTop="5dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Attendance day     :"
+                 android:textSize="15sp"
+                 android:textColor="@color/black"/>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:text="monday"
+                 android:id="@+id/subject_day"
+                 android:textSize="15sp"
+                 android:textColor="@color/black"
+                 />
+         </LinearLayout>
+         <LinearLayout
+             android:layout_marginTop="5dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Attendance Venue :"
+                 android:textSize="15sp"
+                 android:textColor="@color/black"/>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:text="lab1"
+                 android:id="@+id/subject_vanue"
+                 android:textSize="15sp"
+                 android:textColor="@color/black"
+                 />
+         </LinearLayout>
+         <LinearLayout
+             android:layout_marginTop="5dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Attendance time    :"
+                 android:textSize="15sp"
+                 android:textColor="@color/black"/>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:text="9:00am"
+                 android:id="@+id/subjectstartime"
+                 android:textSize="15sp"
+                 android:textColor="@color/black"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:text=" - "
+                 android:textSize="15sp"
+                 android:textStyle="bold"
+                 android:textColor="@color/black"
+                 /> <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:text="10:00am"
+             android:id="@+id/subjectendtime"
+             android:textSize="15sp"
+             android:textColor="@color/black"
+             />
+         </LinearLayout>
+     </LinearLayout>
+     <RelativeLayout
+         android:layout_marginTop="5dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <Button
+             android:id="@+id/deleteCourse"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="30dp"
+             android:layout_centerInParent="true"
+             android:layout_marginRight="30dp"
+             android:text="Delete"
+             android:textAllCaps="false"
+             android:src="@drawable/ic_baseline_delete_24" />
+     </RelativeLayout>
+ </LinearLayout>
+</androidx.cardview.widget.CardView>

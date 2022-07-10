@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="false"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/edit_reg_staff_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint=" Names"
+                android:drawableTint="@color/teal_700"
+                android:background="@drawable/editbackground"
+                android:paddingLeft="5dp"
+                android:textColorHint="@color/white"
+                android:ems="10"
+
+                android:inputType="text"
+                android:allowUndo="true"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_below="@id/edit_reg_staff_name"
+            android:id="@+id/reg_staff_email_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint=" Email"
+                android:drawableTint="@color/teal_700"
+                android:background="@drawable/editbackground"
+                android:paddingLeft="5dp"
+                android:textColorHint="@color/white"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:allowUndo="true"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_staff_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="Phone"
+                android:drawableTint="@color/teal_700"
+                android:background="@drawable/editbackground"
+                android:paddingLeft="5dp"
+                android:textColorHint="@color/white"
+                android:ems="10"
+                android:maxLength="10"
+                android:inputType="phone"
+                android:allowUndo="true"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_staff_department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="Department"
+                android:drawableTint="@color/teal_700"
+                android:background="@drawable/editbackground"
+                android:paddingLeft="5dp"
+                android:textColorHint="@color/white"
+                android:ems="10"
+                android:allowUndo="true"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_staff_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint=" Password"
+                android:drawableTint="@color/teal_700"
+                android:background="@drawable/editbackground"
+                android:paddingLeft="5dp"
+                android:textColorHint="@color/white"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:allowUndo="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_staff_confirm_password"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint=" Confirm password"
+                android:drawableTint="@color/teal_700"
+                android:background="@drawable/editbackground"
+                android:paddingLeft="5dp"
+                android:textColorHint="@color/white"
+                android:ems="10"
+                android:allowUndo="true"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_marginBottom="40dp"
+            android:id="@+id/btn_register_staff"
+            android:layout_width="283dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lin"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Submit"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

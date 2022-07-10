@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "936277196690",
+    "project_id": "staffschedulingsystem-819b7",
+    "storage_bucket": "staffschedulingsystem-819b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936277196690:android:25dc8fc0fb5a62ce424b4b",
+        "android_client_info": {
+          "package_name": "com.example.staffschedulingsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936277196690-geano16jiquhslr77rifh50m1odbo5fn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFVCzb1kvCvpwd2F72d0G-F6xfxnw7bEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936277196690-geano16jiquhslr77rifh50m1odbo5fn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

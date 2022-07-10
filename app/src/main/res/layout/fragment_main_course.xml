@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.CourseMainFragment">
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:id="@+id/courseName">
+              <EditText
+
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_centerHorizontal="true"
+                  android:hint="Enter course Name"
+                  />
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/editbackground"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="10dp"
+              android:layout_below="@id/courseName"
+              android:id="@+id/editcourseCode">
+              <EditText
+
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/courseName"
+                  android:ems="10"
+                  android:hint="Enter course Code"
+                  />
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/editbackground"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="10dp"
+              android:layout_below="@id/editcourseCode"
+              android:id="@+id/editcourseFaculty">
+              <EditText
+
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/editcourseCode"
+                  android:layout_centerHorizontal="true"
+
+                  android:hint="Enter faculty name"
+                  />
+          </com.google.android.material.textfield.TextInputLayout>
+
+
+          <Button
+              android:layout_marginTop="5dp"
+              android:id="@+id/btnAddCourse"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/editcourseFaculty"
+              android:layout_centerHorizontal="true"
+              android:text="Submit course details"
+              android:textAllCaps="false" />
+          <TextView
+              android:layout_below="@id/btnAddCourse"
+              android:layout_centerHorizontal="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/addedListOfCourses"
+              android:text="List of available courses"
+              android:layout_marginLeft="10dp"
+              android:textColor="@color/teal_700"
+              android:textSize="15sp"
+              android:textStyle="bold"
+              android:layout_marginTop="5dp"/>
+
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/recycler_courses"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/addedListOfCourses"
+              android:layout_marginTop="5dp" />
+      </RelativeLayout>
+  </ScrollView>
+</RelativeLayout>

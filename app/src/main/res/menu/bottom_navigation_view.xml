@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_view_staff"
+        android:icon="@drawable/ic_baseline_people_24"
+        android:title="Staff" />
+    <item
+        android:id="@+id/nav_view_course"
+        android:icon="@drawable/coursevector_24"
+        android:title="Course" />
+    <item
+        android:id="@+id/nav_view_student"
+        android:icon="@drawable/student"
+        android:title="students" />
+    <item
+        android:id="@+id/nav_view_marked_register"
+        android:icon="@drawable/ic_baseline_checklist_24"
+        android:title="marked" />
+    <item
+        android:id="@+id/nav_view_logout"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="logout" />
+
+</menu>
